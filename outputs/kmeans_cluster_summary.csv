@@ -1,0 +1,4 @@
+cluster,countries,avg_renew_share,latest_renew_share,renew_share_growth,avg_wind_share,avg_solar_share,avg_hydro_share
+0,36,30.43,41.46,2.07,9.64,3.8,11.89
+1,64,72.97,72.24,-0.26,1.44,0.73,65.07
+2,106,8.76,10.46,0.21,0.91,0.8,5.76

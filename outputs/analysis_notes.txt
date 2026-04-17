@@ -1,0 +1,11 @@
+ARIMA analysis
+- Series: Denmark, Renewables (% electricity)
+- Train/test split: hold out the final 8 annual observations
+- Model selection: lowest AIC over ARIMA(p,d,q), p/d/q in {0,1,2}
+
+K-means analysis
+- Dataset: merged_renewables_data.csv
+- Sample: entities with at least 10 non-missing annual observations from 2010-2022
+- Features: renewable share level, latest share, linear growth, wind/solar/hydro average shares, and variability
+- Standardization: z-score scaling before clustering
+- Clusters: k=3
