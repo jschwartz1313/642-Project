@@ -1,0 +1,9 @@
+Growth decomposition
+- Measures the total change in renewable electricity share for each country.
+- Splits that change into wind, solar, hydro, and residual 'other' components.
+- Useful for saying which source explains the rise in renewable electricity share.
+
+Lagged capacity models
+- Fixed-effects regressions with country and year controls.
+- Compare contemporaneous, 1-year, 2-year, and 3-year lags of wind/solar capacity.
+- Useful for checking whether capacity additions show up later in generation or renewable share.

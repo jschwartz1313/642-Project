@@ -1,0 +1,9 @@
+What each analysis does
+- EDA: shows level differences, growth patterns, and major shocks.
+- ARIMA: forecasts each country's log real GDP using only its own past values.
+- K-means: groups countries with similar GDP growth profiles based on summary features.
+
+Interpretation guidance
+- ARIMA is useful for short-run forecasting, not causal explanation.
+- K-means is exploratory and descriptive, especially with only six countries.
+- Growth-rate plots and period averages often tell the clearest substantive story.

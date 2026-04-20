@@ -1,0 +1,4 @@
+cluster,countries,mean_growth_pct,growth_volatility,latest_log_gdp,post_2000_growth
+0,United States,3.016,2.084,30.748,2.209
+1,China,7.921,6.632,30.548,8.192
+2,"France, Germany, Italy, Mexico",2.684,2.913,28.459,1.187
