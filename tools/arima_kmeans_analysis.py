@@ -193,8 +193,9 @@ def run_kmeans(n_clusters: int = 3) -> tuple[pd.DataFrame, pd.DataFrame]:
     ).dropna()
     features = features.reset_index()
 
+    feature_cols = [c for c in features.columns if c != "Entity"]
     scaler = StandardScaler()
-    X = scaler.fit_transform(features.drop(columns=["Entity"]))
+    X = scaler.fit_transform(features[feature_cols])
 
     kmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=20)
     labels = kmeans.fit_predict(X)
@@ -225,9 +226,24 @@ def run_kmeans(n_clusters: int = 3) -> tuple[pd.DataFrame, pd.DataFrame]:
 
     pca = PCA(n_components=2, random_state=42)
     coords = pca.fit_transform(X)
+    loadings = pd.DataFrame(
+        pca.components_.T,
+        index=feature_cols,
+        columns=["PC1", "PC2"],
+    )
+    loadings.to_csv(OUT / "kmeans_pca_loadings.csv")
     plot_df = features.copy()
     plot_df["pc1"] = coords[:, 0]
     plot_df["pc2"] = coords[:, 1]
+
+    def pc_label(pc_name: str) -> str:
+        series = loadings[pc_name].sort_values(key=lambda s: s.abs(), ascending=False).head(2)
+        parts = []
+        for idx, val in series.items():
+            direction = "+" if val >= 0 else "-"
+            parts.append(f"{direction}{idx}")
+        explained = pca.explained_variance_ratio_[0 if pc_name == "PC1" else 1] * 100
+        return f"{pc_name} ({explained:.1f}% var): " + ", ".join(parts)
 
     plt.figure(figsize=(9, 6))
     cmap = plt.get_cmap("tab10")
@@ -240,8 +256,8 @@ def run_kmeans(n_clusters: int = 3) -> tuple[pd.DataFrame, pd.DataFrame]:
         plt.text(row["pc1"] + 0.03, row["pc2"] + 0.03, row["Entity"], fontsize=7)
 
     plt.title("K-means Clusters of Countries by Renewable Electricity Profile")
-    plt.xlabel("Principal Component 1")
-    plt.ylabel("Principal Component 2")
+    plt.xlabel(pc_label("PC1"))
+    plt.ylabel(pc_label("PC2"))
     plt.legend()
     plt.tight_layout()
     plt.savefig(OUT / "kmeans_clusters_pca.png", dpi=200)
