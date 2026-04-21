@@ -1,0 +1,17 @@
+feature,importance
+hydro_share_elec,0.4376919
+wind_share_elec,0.37954587
+Year,0.055080004
+country_id,0.048104536
+wind_cap,0.025156993
+wind_cap_lag3,0.016049232
+solar_share_elec,0.012101783
+wind_cap_lag2,0.011213457
+wind_cap_lag1,0.0035096393
+solar_cap,0.002442044
+solar_cap_lag1,0.0023132658
+solar_cap_lag2,0.0022198563
+solar_cap_lag3,0.0021407073
+wind_solar_interaction,0.0011202347
+solar_cap_sq,0.00078356324
+wind_cap_sq,0.00052690686

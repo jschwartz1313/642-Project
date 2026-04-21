@@ -1,0 +1,4 @@
+model,formula,n_obs,r_squared,adj_r_squared,aic,bic
+baseline_linear,renew_share_elec ~ wind_cap + solar_cap + C(Entity) + C(Year),225,0.651039195552417,0.5885935779144285,1614.1973211465834,1733.760835223738
+interaction,renew_share_elec ~ wind_cap + solar_cap + wind_solar_interaction + C(Entity) + C(Year),225,0.6514767735587447,0.5869354353288826,1615.9150062548283,1738.8946207341874
+quadratic,renew_share_elec ~ wind_cap + solar_cap + wind_cap_sq + solar_cap_sq + C(Entity) + C(Year),225,0.6512582403277276,0.5844779033692074,1618.0560429612974,1744.4517578428608
