@@ -1,0 +1,13 @@
+Students will give a 10-minute presentation to showcase their project in class. The focus of this presentation is to demonstrate and describe what was done, report interesting observations, present key insights and conclusions, and discuss potential limitations of the study. Students working in teams may choose to present as a group or elect one of the team members to present on their behalf. Students will not be penalized for choosing not to present individually, as long as the project itself is showcased.
+
+Your presentation will be evaluated along the following dimensions:
+
+1. Clarity: Your presentation should clearly and selectively communicate key concepts, facts, methods, experiments, findings, viewpoints, etc., produced from your project. Focusing a few major points and “driving them home” makes a more powerful presentation than trying to cover everything in equal detail. The purpose of the presentation is not to cover everything in your final deliverable. Rather, the purpose is to communicate the gist of your problem and findings in an engaging manner (next point).
+
+2. Engagement: Your presentation should engage the audience from the start. To increase engagement, use concrete examples/cases, stories, questions, show-of-hand polls, simple games, demonstrations, multimedia, and other creative ways to keep your audience excited, entertained, actively participating in and learning from your presentation.
+
+3. Structure: Your presentation should follow a logical and coherent structure. One common way of achieving this is to show an outline (or agenda) at the beginning of your presentation, and then remind the audience the outline when transitioning from one part to the next. This way the audience will have a “mind map” of your presentation and know what to expect in each part.
+
+4. Uncluttered slides: Avoid using too much text on your slides. Use pictures and diagrams instead. If too much content is on one slide, try to simplify it or break it into multiple slides. If you use text on a slide, make sure the fonts are not too small for people sitting in the back. Avoid excessive use of special effects (slow fades, transitions, backgrounds, sound effects) to help your presentation focus on the substance rather than the surface.
+
+5. Timing: In principle, your presentation (not including the Q&A part) should be properly paced such that it does not take more or less than the allotted time limit by 2 minutes. The best way of ensuring a successful presentation is to rehearse it such that you make the best use of time and deliver the best of your hard work!
