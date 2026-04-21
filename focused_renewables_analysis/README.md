@@ -24,6 +24,7 @@ How do wind and solar capacity relate to renewable electricity generation and re
 
 - `renewables_decomposition_lagged.py`
   Generates the lagged-capacity models and the renewable-share decomposition outputs.
+  This script reads from `../data/derived_renewables/` at the repo level.
 
 `outputs/`
 
@@ -42,7 +43,7 @@ How do wind and solar capacity relate to renewable electricity generation and re
 
 ## What is intentionally left out
 
-This folder does not include the GDP analysis, ARIMA forecasting outputs, or K-means clustering outputs. Those analyses still exist elsewhere in the repo, but they are not part of the narrow core story.
+This folder does not include the GDP analysis, ARIMA forecasting outputs, or K-means clustering outputs. Those analyses still exist under `side_analyses/`, but they are not part of the narrow core story.
 
 ## Recommended presentation flow
 

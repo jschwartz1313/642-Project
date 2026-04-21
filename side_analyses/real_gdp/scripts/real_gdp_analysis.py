@@ -13,9 +13,10 @@ from sklearn.preprocessing import StandardScaler
 from statsmodels.tsa.arima.model import ARIMA
 
 
-ROOT = Path("/Users/jakeschwartz/642-Project")
-DATA = ROOT / "real_gdp_data_six_countries.csv"
-OUT = ROOT / "outputs" / "real_gdp"
+REPO_ROOT = Path(__file__).resolve().parents[3]
+ANALYSIS_ROOT = Path(__file__).resolve().parents[1]
+DATA = ANALYSIS_ROOT / "data" / "real_gdp_data_six_countries.csv"
+OUT = ANALYSIS_ROOT / "outputs"
 OUT.mkdir(parents=True, exist_ok=True)
 
 

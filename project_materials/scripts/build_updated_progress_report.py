@@ -5,15 +5,30 @@ from pathlib import Path
 from pptx import Presentation
 
 
-TEMPLATE = Path("/Users/jakeschwartz/Desktop/642 Project Progress Report (3).pptx")
-OUTPUT = Path("/Users/jakeschwartz/Desktop/642 Project Progress Report - Updated.pptx")
+REPO_ROOT = Path(__file__).resolve().parents[2]
+MATERIALS_ROOT = Path(__file__).resolve().parents[1]
 
-ARIMA_IMG = "/Users/jakeschwartz/642-Project/outputs/arima_forecast.png"
-KMEANS_IMG = "/Users/jakeschwartz/642-Project/outputs/kmeans_clusters_pca.png"
-DECOMP_IMG = "/Users/jakeschwartz/642-Project/outputs/renewables_extensions/renewable_share_decomposition.png"
-LAG_SHARE_IMG = "/Users/jakeschwartz/642-Project/outputs/renewables_extensions/lagged_capacity_renew_share_elec.png"
-LAG_WIND_IMG = "/Users/jakeschwartz/642-Project/outputs/renewables_extensions/lagged_capacity_wind_gen.png"
-LAG_SOLAR_IMG = "/Users/jakeschwartz/642-Project/outputs/renewables_extensions/lagged_capacity_solar_gen.png"
+TEMPLATE = MATERIALS_ROOT / "presentations" / "642 Project Progress Report - Updated.pptx"
+OUTPUT = MATERIALS_ROOT / "presentations" / "642 Project Progress Report - Updated.generated.pptx"
+
+ARIMA_IMG = str(
+    REPO_ROOT / "side_analyses" / "renewables_forecasting_clustering" / "outputs" / "arima_forecast.png"
+)
+KMEANS_IMG = str(
+    REPO_ROOT / "side_analyses" / "renewables_forecasting_clustering" / "outputs" / "kmeans_clusters_pca.png"
+)
+DECOMP_IMG = str(
+    REPO_ROOT / "focused_renewables_analysis" / "outputs" / "renewable_share_decomposition.png"
+)
+LAG_SHARE_IMG = str(
+    REPO_ROOT / "focused_renewables_analysis" / "outputs" / "lagged_capacity_renew_share_elec.png"
+)
+LAG_WIND_IMG = str(
+    REPO_ROOT / "focused_renewables_analysis" / "outputs" / "lagged_capacity_wind_gen.png"
+)
+LAG_SOLAR_IMG = str(
+    REPO_ROOT / "focused_renewables_analysis" / "outputs" / "lagged_capacity_solar_gen.png"
+)
 
 
 def set_text(shape, text: str) -> None:

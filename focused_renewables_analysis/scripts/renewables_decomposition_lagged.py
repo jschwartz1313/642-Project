@@ -8,12 +8,13 @@ import pandas as pd
 import statsmodels.formula.api as smf
 
 
-ROOT = Path("/Users/jakeschwartz/642-Project")
-OUT = ROOT / "outputs" / "renewables_extensions"
+REPO_ROOT = Path(__file__).resolve().parents[2]
+ANALYSIS_ROOT = Path(__file__).resolve().parents[1]
+OUT = ANALYSIS_ROOT / "outputs"
 OUT.mkdir(parents=True, exist_ok=True)
 
-RENEWABLES = ROOT / "merged_renewables_data.csv"
-CAPACITY = ROOT / "merged_capacity_data.csv"
+RENEWABLES = REPO_ROOT / "data" / "derived_renewables" / "merged_renewables_data.csv"
+CAPACITY = REPO_ROOT / "data" / "derived_renewables" / "merged_capacity_data.csv"
 
 AGGREGATES = {
     "Africa",
