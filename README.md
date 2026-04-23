@@ -14,6 +14,9 @@ That folder contains the materials most relevant to the current project scope:
 - baseline fixed-effects regression
 - lagged capacity models
 - renewable-share decomposition as supporting interpretation
+- nonlinear fixed-effects extensions
+- K-means clustering
+- XGBoost prediction benchmarking
 
 ## Folder guide
 
@@ -24,12 +27,12 @@ That folder contains the materials most relevant to the current project scope:
 
 `focused_renewables_analysis/`
 
-- the main folder for the final project story
+- the main folder for the final project story, including the presentation-ready extensions
 
 `side_analyses/`
 
 - `real_gdp/`: the separate GDP analysis track
-- `renewables_forecasting_clustering/`: renewables ARIMA and K-means side analyses
+- `renewables_forecasting_clustering/`: older exploratory renewables ARIMA and clustering analyses kept for reference
 
 `project_materials/`
 
